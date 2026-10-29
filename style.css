@@ -101,3 +101,13 @@ h1{font-size:1.5rem}
 .section{padding:60px 0}
 .section > .wrap > h2{margin-bottom:28px}
 }
+/* 写真 */
+.photo-band{padding:0}
+.photo-band img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center 40%}
+.gallery{display:grid;gap:14px}
+.gallery img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px}
+@media(min-width:700px){
+.photo-band .wrap{max-width:1080px}
+.photo-band img{border-radius:4px;aspect-ratio:21/9}
+.gallery{grid-template-columns:repeat(2,1fr)}
+}
